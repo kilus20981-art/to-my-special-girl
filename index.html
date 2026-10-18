@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050207">
+  <title>Gửi em, người đặc biệt nhất 💗</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Hạt sáng nền và chữ bay -->
+  <canvas id="particleCanvas"></canvas>
+  <div id="floatingWords" aria-hidden="true"></div>
+
+  <!-- Màn hình mở đầu -->
+  <section class="page active" id="page-home">
+    <div class="intro">
+      <p class="eyebrow">A LITTLE SURPRISE FOR YOU</p>
+      <h1>Gửi em, <span>người đặc biệt</span></h1>
+      <p class="intro-text">
+        Có một điều anh muốn dành riêng cho em trong ngày đặc biệt này...
+      </p>
+      <button class="glow-button" data-go="page-heart">
+        Mở món quà của anh <span>♡</span>
+      </button>
+      <div class="scroll-hint">MADE WITH LOVE · 20/10</div>
+    </div>
+  </section>
+
+  <!-- Trái tim hạt sáng và các vòng chữ 3D -->
+  <section class="page" id="page-heart">
+    <button class="back-button" data-go="page-home">← Quay lại</button>
+
+    <div class="heart-scene">
+      <div class="orbit orbit-one">
+        <div class="orbit-label" id="ringOne"></div>
+      </div>
+      <div class="orbit orbit-two">
+        <div class="orbit-label" id="ringTwo"></div>
+      </div>
+      <div class="orbit orbit-three">
+        <div class="orbit-label" id="ringThree"></div>
+      </div>
+
+      <div class="heart-center">
+        <div class="heart-glow"></div>
+        <div class="heart-symbol">♥</div>
+        <p>FOR YOU</p>
+      </div>
+    </div>
+
+    <div class="scene-caption">
+      <p class="eyebrow">20 · 10 · FOR MY LOVE</p>
+      <h2>Em xứng đáng với những điều đẹp nhất.</h2>
+      <p>Giữa hàng triệu điều trên thế giới, anh thật vui vì có em.</p>
+      <button class="glow-button" data-go="page-wish">
+        Đọc lời chúc nhé <span>♡</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Trang lời chúc -->
+  <section class="page" id="page-wish">
+    <button class="back-button" data-go="page-heart">← Quay lại</button>
+
+    <div class="wish-card">
+      <div class="tiny-heart">♡</div>
+      <p class="eyebrow">HAPPY VIETNAMESE WOMEN'S DAY</p>
+      <h2>Chúc mừng ngày <span>20/10</span>, em yêu!</h2>
+
+      <p>
+        Anh chúc em luôn vui vẻ, bình an, tự tin và được yêu thương
+        thật nhiều. Mong rằng mỗi ngày của em đều có những điều nhỏ bé
+        khiến em mỉm cười.
+      </p>
+
+      <p>
+        Cảm ơn em vì đã xuất hiện và làm cho những ngày bình thường
+        trở nên đặc biệt hơn. Anh mong em luôn được là chính mình,
+        theo đuổi những điều em yêu thích và không bao giờ quên rằng
+        em rất đáng quý.
+      </p>
+
+      <p class="wish-signature">Thương em thật nhiều ♡</p>
+
+      <button class="glow-button" data-go="page-letter">
+        Có một lá thư cho em <span>✉</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Trang thư bí mật -->
+  <section class="page" id="page-letter">
+    <button class="back-button" data-go="page-wish">← Quay lại</button>
+
+    <div class="letter-card">
+      <p class="eyebrow">A LETTER FROM MY HEART</p>
+      <div class="envelope">💌</div>
+      <h2>Gửi em thương của anh</h2>
+
+      <p>
+        Nếu có thể gửi đến em một điều trong ngày 20/10 này,
+        anh muốn gửi em thật nhiều niềm vui và sự dịu dàng.
+      </p>
+
+      <p>
+        Anh không hứa mọi ngày đều hoàn hảo, nhưng anh mong chúng ta
+        có thể cùng nhau chia sẻ niềm vui, lắng nghe nhau và trân trọng
+        những điều giản dị.
+      </p>
+
+      <p>
+        Hãy luôn chăm sóc bản thân, cười thật nhiều và nhớ rằng em
+        xứng đáng với những điều tử tế. Chúc cô gái đặc biệt của anh
+        có một ngày 20/10 thật ấm áp. ♡
+      </p>
+
+      <p class="wish-signature">Thương em — hôm nay và những ngày sau.</p>
+
+      <button class="glow-button" data-go="page-end">
+        Đến điều cuối cùng nhé ♡
+      </button>
+    </div>
+  </section>
+
+  <!-- Màn hình kết thúc -->
+  <section class="page" id="page-end">
+    <div class="ending">
+      <div class="ending-heart">♥</div>
+      <p class="eyebrow">ONE LAST THING</p>
+      <h2>Chúc em luôn hạnh phúc.</h2>
+      <p>
+        Mong rằng khi nhìn lại món quà nhỏ này, em sẽ mỉm cười.
+        Chúc em một ngày 20/10 thật xinh đẹp và đáng nhớ. 💗
+      </p>
+      <button class="glow-button" data-go="page-home">
+        Xem lại từ đầu ↻
+      </button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
